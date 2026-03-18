@@ -37,52 +37,6 @@
 // Each scene is an object stored inside `storyNodes`.
 
 const storyNodes = {
-  // Start the dive:
-  //  1. continue-dive
-  //     a. contactSurface
-  //     b. ignoreRadio
-
-  // -------------------------------------------------------
-
-  //  a. contactSurface
-  //      i. surface
-  //      ii. ignoreRadio > LOOPS INTO THE BELOW SCENE
-
-  // -------------------------------------------------------
-
-  //  b. ignoreRadio
-  //      i. retreat > END SCENE
-  //      ii. holdGround > END SCENE
-
-  // Start the dive:
-  //  1. continue-dive
-  //     a. contactSurface
-  //     b. ignoreRadio
-
-  // -------------------------------------------------------
-
-  //  a. contactSurface
-  //      i. surface
-  //      ii. ignoreRadio > LOOPS INTO THE BELOW SCENE
-
-  // -------------------------------------------------------
-
-  //  b. ignoreRadio
-  //      i. retreat > END SCENE (1)
-  //      ii. holdGround > END SCENE (2)
-
-  // -------------------------------------------------------
-
-  //  b. surface
-  //      i.retreat > END SCENE (1)
-  //      ii. observe
-
-  // -------------------------------------------------------
-
-  //  b. observe
-  //      i. end-ascend > END SCENE (3)
-  //      ii. holdGround > END SCENE (2)
-
   start: {
     id: "start", // must exactly match its key in `storyNodes`
     text: "You are a submersible pilot operating the NEST. Your mission is find out what happened to the Deimos. Before you make it down to depth, you start having radio issues with the surface. Do you keep going?",
